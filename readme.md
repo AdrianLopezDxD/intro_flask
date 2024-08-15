@@ -29,3 +29,18 @@ pip install -r paquetes.txt
 ```
 git pull
 ```
+#### Crear ramas hijas 
+
+git checkout -b rama-hija
+
+#### Moverse entre ramas 
+
+git checkout nombre de rama
+
+#### mostrar las ramas, incluida la que esta en uso 
+
+git branch 
+ 
+#### instalar el driver de la base de datos Postgresql
+
+pip install psycopg2-binary
