@@ -11,3 +11,9 @@ class CiudadDao:
         """
         conexion = Conexion()
         con = conexion.getConexion()
+        try:
+            pass
+        except:
+            pass
+        finally:
+            pass
