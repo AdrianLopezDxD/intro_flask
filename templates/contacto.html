@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holis</title>
+    <title>Hola</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 </head>
 <body>
-    <h3>Holis desde el servidor</h3>
-    <p>Que yo te quiero ver bailar y en la mañana recordar</p>
+    <div class="container">
+        <h3>Registro de Mascota</h3>
+        <div class="row">   
+            <!-- columna de la mascota -->
+            <!-- de 6 espacios -->
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12">
+                <form action="{{ url_for('guardarMascota') }}" method="post">
+                <div class="card bg">
+                    <div class="card-header bg-info">Informacion de la mascota</div>
+                    <div class="card-body">
+                        <h5>Nombre de mascota</h5>
+                    <input type="text" class="form-control" placeholder="pon tu nombre" name="txtNamemascota" id="txtNamemascota">
+                    <br>
+                    <h5>Tipo de mascota</h5>
+                    <input type="text" class="form-control" placeholder="pon tu nombre" name="txtTipoMascota" id="txtTipoMascota">
+                    <br>
+                    <h5>Raza</h5>
+                    <input type="text" class="form-control" placeholder="pon tu nombre" name="txtRaza" id="txtRaza">
+                    <br>
+                    <h5>Edad</h5>
+                    <input type="text" class="form-control" placeholder="pon tu nombre" name="txtEdad" id="txtEdad">
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary" name="btnGuardar" id="btnGuardar">Guardar</button>
+                    </div>
+                    <br>
+                </div> 
+            </form>
+            </div>          
+        </div>    
+    </div>
+    <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 </body>
 </html>

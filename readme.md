@@ -29,3 +29,12 @@ pip install -r paquetes.txt
 ```
 git pull
 ```
+#### moverse entre ramas
+```
+git checkout nombre de la rama
+```
+#### mostrar las ramas, incluida la que esta en uso
+```
+git branch
+
+``` 
