@@ -1,5 +1,5 @@
 # Data access object - DAO
-from conexion.Conexion import Conexion
+from conexión.Conexion import Conexion
 
 class CiudadDao:
 
