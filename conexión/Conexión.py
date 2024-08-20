@@ -4,11 +4,12 @@ class Conexion:
 
 
     def __init__(self):
-        self.con = psycopg2.connect("dbname=veterinaria-db user=postgre password=lopezrojas19")
+        self.con = psycopg2.connect("dbname=veterinaria-db user=postgre host=localhost password=lopezrojas19")
+        
         """getConexión
 
             retorna la instancia de la base de datos
 
         """
-        def getConexión(self):
+        def getConexion(self):
             return self.con
